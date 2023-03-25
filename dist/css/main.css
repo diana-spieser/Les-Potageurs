@@ -19,7 +19,7 @@
 
 .btn-main {
   color: #333;
-  background-color: #28a754; }
+  background-color: green; }
 
 .btn-light {
   color: #333;
@@ -32,10 +32,10 @@
 button[class^="btn-"]:hover,
 a[class^="btn-"]:hover,
 input[class^="btn-"]:hover {
-  background-color: #28a754; }
+  background-color: green; }
 
 .bg-main {
-  background-color: #28a754;
+  background-color: green;
   color: #fff; }
 
 .bg-light {
@@ -92,7 +92,7 @@ input[class^="btn-"]:hover {
 .bottom-line {
   height: 2px;
   width: 3rem;
-  background-color: #28a754;
+  background-color: green;
   display: block;
   margin: 0 auto 1rem auto; }
 
@@ -123,7 +123,7 @@ input[class^="btn-"]:hover {
 
 .item {
   position: relative;
-  background: #28a754;
+  background: green;
   overflow: hidden; }
   .item:after {
     content: "";
@@ -239,7 +239,7 @@ img {
       #main-nav li a:hover {
         border-color: #ccc; }
       #main-nav li a.current {
-        border-color: #28a754; }
+        border-color: green; }
 
 #header-home {
   background: url("../img/showcase.jpg") no-repeat center right/cover;
@@ -258,7 +258,7 @@ img {
 #header-inner {
   background: url("../img/showcase.jpg") no-repeat 20% 30%/cover;
   height: 5.5rem;
-  border-bottom: 3px solid #28a754;
+  border-bottom: 3px solid green;
   z-index: 100; }
 
 #header-home::before {
@@ -280,8 +280,10 @@ img {
   grid-gap: 1rem;
   grid-template-columns: repeat(4, 1fr); }
   #home-a .specials .fas {
-    color: #28a754;
+    color: green;
     padding-bottom: 0.4rem; }
+    #home-a .specials .fas:hover {
+      color: #333; }
 
 #home-b .stats {
   display: grid;
@@ -310,7 +312,7 @@ img {
     top: 0;
     right: 0;
     font-size: 28px;
-    background: #28a754;
+    background: green;
     color: #fff;
     border-radius: 50%;
     height: 15px;
@@ -330,7 +332,7 @@ img {
     position: relative;
     transition: all 1s; }
     #home-c .process-icon:hover {
-      background: #28a754;
+      background: green;
       color: #fff;
       width: 90px;
       height: 90px;
@@ -348,7 +350,7 @@ img {
 
 #about-a .bio {
   grid-area: bio;
-  border-left: 3px solid #28a754;
+  border-left: 3px solid green;
   padding: 0.8rem; }
 
 #about-a .award-1 {
@@ -363,7 +365,7 @@ img {
 #about-a .award-1 .fas,
 #about-a .award-2 .fas,
 #about-a .award-3 .fas {
-  color: #28a754;
+  color: green;
   margin: 1rem; }
 
 #about-b .progress {
@@ -376,7 +378,7 @@ img {
     height: 100%;
     color: #fff;
     text-align: center;
-    background-color: #28a754; }
+    background-color: green; }
 
 #about-c .about-logos {
   display: grid;
@@ -404,42 +406,38 @@ img {
     border-radius: 50%;
     margin-right: 1rem; }
 
-/* Blog post*/
-.post {
-  padding: 50px 30px; }
+#about-a .about-info {
+  display: grid;
+  grid-template-areas: "bioimage bio bio" "aw1 aw2 aw3";
+  grid-gap: 1.2rem; }
 
-.post h2 {
-  font-size: 40px;
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #ccc; }
+#about-a .bio-image {
+  grid-area: bioimage; }
 
-.post .meta {
-  margin-bottom: 30px; }
+#about-a .bio {
+  grid-area: bio;
+  border-left: 3px solid green;
+  padding: 0.8rem; }
 
-.post img {
-  width: 300px;
-  border-radius: 50%;
-  display: block;
-  margin: 0 auto 30px; }
+#about-a .award-1 {
+  grid-area: aw1; }
 
-/* Mobile */
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    height: 120px;
-    padding: 20px; }
-  .navbar a {
-    padding: 10px 10px;
-    margin: 0px 3px; }
-  .flex-items {
-    flex-direction: column; }
-  .flex-columns .column,
-  .flex-grid .column {
-    flex: 100%;
-    max-width: 100%; }
-  .team img {
-    width: 70%; } }
+#about-a .award-2 {
+  grid-area: aw2; }
+
+#about-a .award-3 {
+  grid-area: aw3; }
+
+#about-a .award-1 .fas,
+#about-a .award-2 .fas,
+#about-a .award-3 .fas {
+  color: green;
+  margin: 1rem; }
+  #about-a .award-1 .fas:hover,
+  #about-a .award-2 .fas:hover,
+  #about-a .award-3 .fas:hover {
+    color: #333;
+    font-size: 4rem; }
 
 #contact-a .text-fields {
   display: grid;
@@ -488,7 +486,7 @@ img {
       line-height: 20px;
       text-align: center; }
       #main-footer .footer-content .social .fab:hover {
-        color: #28a754; }
+        color: green; }
 
 @media (max-width: 800px) {
   #header-home {
@@ -504,7 +502,7 @@ img {
       padding: 1rem; }
   #header-home {
     height: 10rem;
-    border-bottom: 3px solid #28a754;
+    border-bottom: 3px solid green;
     background-position: 20% 30%; }
     #header-home .header-content {
       display: none; }

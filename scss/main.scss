@@ -132,6 +132,9 @@ img {
       .fas {
         color: $main-color;
         padding-bottom: 0.4rem;
+        &:hover {
+          color: $dark-color;
+        }
       }
     }
   }
@@ -318,49 +321,46 @@ img {
   }
 }
 
-/* Blog post*/
-.post {
-  padding: 50px 30px;
-}
-.post h2 {
-  font-size: 40px;
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #ccc;
-}
-
-.post .meta {
-  margin-bottom: 30px;
-}
-
-.post img {
-  width: 300px;
-  border-radius: 50%;
-  display: block;
-  margin: 0 auto 30px;
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    height: 120px;
-    padding: 20px;
-  }
-  .navbar a {
-    padding: 10px 10px;
-    margin: 0px 3px;
-  }
-  .flex-items {
-    flex-direction: column;
-  }
-  .flex-columns .column,
-  .flex-grid .column {
-    flex: 100%;
-    max-width: 100%;
-  }
-  .team img {
-    width: 70%;
+// Our Services Section
+// About Sections
+// About Sections
+#about {
+  &-a {
+    .about-info {
+      display: grid;
+      grid-template-areas:
+        "bioimage bio bio"
+        "aw1 aw2 aw3";
+      grid-gap: 1.2rem;
+    }
+    // Grid Area
+    .bio-image {
+      grid-area: bioimage;
+    }
+    .bio {
+      grid-area: bio;
+      border-left: 3px solid $main-color;
+      padding: 0.8rem;
+    }
+    .award-1 {
+      grid-area: aw1;
+    }
+    .award-2 {
+      grid-area: aw2;
+    }
+    .award-3 {
+      grid-area: aw3;
+    }
+    .award-1 .fas,
+    .award-2 .fas,
+    .award-3 .fas {
+      color: $main-color;
+      margin: 1rem;
+      &:hover {
+        color: $dark-color;
+        font-size: 4rem;
+      }
+    }
   }
 }
 
